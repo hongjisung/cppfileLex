@@ -19,3 +19,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+========================================================================
+========================================================================
+========================================================================
+
+Files in "include/clang-c" are from "https://github.com/llvm/llvm-project/tree/release/6.x/clang/include/clang-c"
+License text is available at "include/LICENSE.TXT"
+
+The file "include/nlohmann/json.hpp" comes from "https://github.com/nlohmann/json"
+License text is available at "include/LICENSE.TXT"
+
