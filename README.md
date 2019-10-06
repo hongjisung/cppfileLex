@@ -11,3 +11,7 @@ Lex a single cpp file and print (row, column, TokenKind, TokenContents) into jso
 ## Run
 * `./lx_cpp2json.o <input filename> <output filename>`
 
+## Reference
+* [libclang doc](https://clang.llvm.org/doxygen/group__CINDEX.html)
+* libclang tutorial 1 https://gist.github.com/yifu/3761845
+* libclang tutorial 2 https://shaharmike.com/cpp/libclang/
