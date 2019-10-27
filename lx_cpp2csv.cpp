@@ -5,6 +5,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <tuple>
+#include <vector>
 
 using namespace std;
 
@@ -15,6 +17,16 @@ ofstream ofs;
 
 CXIndex c_index;
 CXTranslationUnit tr_unit;
+
+// tokenlist
+// start position, end position, line number, column number, token kind, token name
+struct TokenList {
+    unsigned startPosition;
+    unsigned endPosition;
+    vector<tuple<unsigned, unsigned, CXTokenKind, string>> tokenList;
+};
+
+vector<TokenList> exprTokenList;
 
 unsigned getTokenKindUInt(CXTokenKind ck)
 {
@@ -76,14 +88,25 @@ bool isCursorOnFile(CXCursor c, string filename)
     return rvalue;
 }
 
-void writeTokenInfo(unsigned line, unsigned column, CXTokenKind tk, string tokenContents)
+void writeTokenInfo(unsigned line, unsigned column, CXTokenKind tk, string tokenContents, string seperator="\t")
 {
     ofs
-    << line << ", "
-    << column << ", "
-    << getTokenKindSpelling(tk) << ", "
+    << line << seperator
+    << column << seperator
+    << getTokenKindSpelling(tk) << seperator
     << tokenContents
-    << endl;
+    << "\n";
+}
+
+void writeExprTokenList(string seperator="\t") {
+    for (int i = 0; i < exprTokenList.size() - 1; i++) {
+        if (i == exprTokenList.size() - 1 || exprTokenList[i].endPosition <= exprTokenList[i+1].startPosition) {
+            for (int tkIdx = 0; tkIdx < exprTokenList[i].tokenList.size(); tkIdx++) {
+                tuple<unsigned, unsigned, CXTokenKind, string> data = exprTokenList[i].tokenList[tkIdx];
+                writeTokenInfo(get<0>(data), get<1>(data), get<2>(data), get<3>(data), seperator);
+            }
+        }
+    }
 }
 
 // WARNING: visit_writeTokens depends on global variables in this file.
@@ -100,6 +123,11 @@ CXChildVisitResult visit_writeTokens(CXCursor c, CXCursor parent, CXClientData c
     CXToken *tokens;
     unsigned numtokens;
     clang_tokenize(tr_unit, curRange, &tokens, &numtokens);
+
+    // token list
+    TokenList tokenList;
+    tokenList.startPosition = curRange.begin_int_data;
+    tokenList.endPosition = curRange.end_int_data;
 
     // for each token, print token informations on the stream ofs.
     for(unsigned i = 0; i < numtokens; ++i)
@@ -118,9 +146,12 @@ CXChildVisitResult visit_writeTokens(CXCursor c, CXCursor parent, CXClientData c
         string tss = static_cast<string>(clang_getCString(ts));
 
         // write
-        writeTokenInfo(lin, col, tk, tss);
+        // writeTokenInfo(lin, col, tk, tss);
+        tokenList.tokenList.push_back(make_tuple(lin, col, tk, tss));
     }
 
+    exprTokenList.push_back(tokenList);
+    cout<<"execute iter, token count"<<numtokens<<"\n";
     return CXChildVisit_Continue;
 }
 
@@ -162,6 +193,7 @@ int main(int argc, char **argv)
         nullptr
     );
 
+    writeExprTokenList();
     // close output file.
     ofs.close();
 
