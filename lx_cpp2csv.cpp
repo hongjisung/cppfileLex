@@ -176,14 +176,9 @@ CXChildVisitResult visit_writeTokens(CXCursor c, CXCursor parent, CXClientData c
         // writeTokenInfo(lin, col, tk, tss);
         tokenList.tokenList.push_back(make_tuple(lin, col, off, tk, tss));
         
-        if (cursorSpelling == tss) {
+        if (cursorSpelling == tss || numtokens == 1) {
             cursorSpellingOffset = off;
         }
-        // if (numtokens == 1) {
-        //     offsetToKindSpelling[off] = cursorKindSpelling;
-        //     offsetToKindSpelling[to_string(lin) + "+" + to_string(col)] = cursorKindSpelling;
-        //     cout<<lin<<" "<<col<<" "<<off<<" "<<cursorKindSpelling<<" "<<getTokenKindSpelling(tk)<<" "<<tss<<"\n";
-        // }
     }
 
     if (exprTokenList.size() == 0 || exprTokenList[exprTokenList.size() - 1].endPosition < tokenList.endPosition) {

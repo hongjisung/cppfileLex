@@ -1,5 +1,5 @@
 CC=clang++
-OUT_CSV=lx_cpp2json
+OUT_CSV=lx_cpp2csv
 
 all: jsonVer csvVer
 

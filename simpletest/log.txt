@@ -17,21 +17,21 @@
 14	7	210	TypeRef	Identifier	ll
 14	10	213	VarDecl	Identifier	H
 14	11	214		Punctuation	=
-14	12	215		Literal	100456
+14	12	215	IntegerLiteral	Literal	100456
 16	1	224	TypeRef	Identifier	ll
 16	4	227	VarDecl	Identifier	pow1
 16	8	231		Punctuation	[
-16	9	232		Literal	1000005
+16	9	232	IntegerLiteral	Literal	1000005
 16	16	239		Punctuation	]
 16	17	240		Punctuation	,
 16	18	241	VarDecl	Identifier	pow2
 16	22	245		Punctuation	[
-16	23	246		Literal	1000005
+16	23	246	IntegerLiteral	Literal	1000005
 16	30	253		Punctuation	]
 16	31	254		Punctuation	,
 16	32	255	VarDecl	Identifier	powd
 16	36	259		Punctuation	[
-16	37	260		Literal	1000005
+16	37	260	IntegerLiteral	Literal	1000005
 16	44	267		Punctuation	]
 18	1	271		Keyword	void
 18	6	276	FunctionDecl	Identifier	pre
@@ -42,37 +42,37 @@
 19	9	292		Punctuation	<
 19	10	293		Keyword	int
 19	13	296		Punctuation	>
-19	15	298	VarDecl	Identifier	vi
+19	15	298	CallExpr	Identifier	vi
 19	17	300		Punctuation	;
 20	3	304	DeclRefExpr	Identifier	pow1
 20	7	308		Punctuation	;
 21	3	312	DeclRefExpr	Identifier	pow1
 21	7	316		Punctuation	[
-21	8	317		Literal	0
+21	8	317	IntegerLiteral	Literal	0
 21	9	318		Punctuation	]
 21	10	319		Punctuation	=
 21	11	320	DeclRefExpr	Identifier	pow2
 21	15	324		Punctuation	[
-21	16	325		Literal	0
+21	16	325	IntegerLiteral	Literal	0
 21	17	326		Punctuation	]
 21	18	327		Punctuation	=
 21	19	328	DeclRefExpr	Identifier	powd
 21	23	332		Punctuation	[
-21	24	333		Literal	0
+21	24	333	IntegerLiteral	Literal	0
 21	25	334		Punctuation	]
 21	26	335		Punctuation	=
-21	27	336		Literal	1
+21	27	336	IntegerLiteral	Literal	1
 21	28	337		Punctuation	;
 22	3	341		Keyword	for
 22	6	344		Punctuation	(
 22	7	345		Keyword	int
 22	11	349	VarDecl	Identifier	i
 22	12	350		Punctuation	=
-22	13	351		Literal	1
+22	13	351	IntegerLiteral	Literal	1
 22	14	352		Punctuation	;
 22	15	353	DeclRefExpr	Identifier	i
 22	16	354		Punctuation	<=
-22	18	356		Literal	1e6
+22	18	356	FloatingLiteral	Literal	1e6
 22	21	359		Punctuation	;
 22	22	360	DeclRefExpr	Identifier	i
 22	23	361		Punctuation	++
@@ -87,7 +87,7 @@
 23	16	382		Punctuation	[
 23	17	383	DeclRefExpr	Identifier	i
 23	18	384		Punctuation	-
-23	19	385		Literal	1
+23	19	385	IntegerLiteral	Literal	1
 23	20	386		Punctuation	]
 23	21	387		Punctuation	*
 23	22	388	DeclRefExpr	Identifier	H
@@ -103,7 +103,7 @@
 24	16	411		Punctuation	[
 24	17	412	DeclRefExpr	Identifier	i
 24	18	413		Punctuation	-
-24	19	414		Literal	1
+24	19	414	IntegerLiteral	Literal	1
 24	20	415		Punctuation	]
 24	21	416		Punctuation	*
 24	22	417	DeclRefExpr	Identifier	H
@@ -119,10 +119,10 @@
 25	16	440		Punctuation	[
 25	17	441	DeclRefExpr	Identifier	i
 25	18	442		Punctuation	-
-25	19	443		Literal	1
+25	19	443	IntegerLiteral	Literal	1
 25	20	444		Punctuation	]
 25	21	445		Punctuation	*
-25	22	446		Literal	10LL
+25	22	446	IntegerLiteral	Literal	10LL
 25	26	450		Punctuation	%
 25	27	451		Identifier	MOD1
 25	31	455		Punctuation	;
@@ -135,12 +135,12 @@
 31	7	487		Keyword	int
 31	11	491	VarDecl	Identifier	Maxn
 31	15	495		Punctuation	=
-31	16	496		Literal	15000000
+31	16	496	IntegerLiteral	Literal	15000000
 31	24	504		Punctuation	;
 32	1	506		Keyword	int
 32	5	510	VarDecl	Identifier	testm
 32	10	515		Punctuation	=
-32	11	516		Literal	0
+32	11	516	IntegerLiteral	Literal	0
 32	12	517		Punctuation	;
 34	1	520		Keyword	int
 34	5	524	VarDecl	Identifier	sumv1
@@ -159,7 +159,7 @@
 35	8	556	DeclRefExpr	Identifier	Maxn
 35	12	560		Punctuation	]
 35	13	561		Punctuation	[
-35	14	562		Literal	2
+35	14	562	IntegerLiteral	Literal	2
 35	15	563		Punctuation	]
 35	16	564		Punctuation	,
 35	17	565	VarDecl	Identifier	tot
@@ -200,7 +200,7 @@
 40	6	656	DeclRefExpr	Identifier	tot
 40	9	659		Punctuation	]
 40	10	660		Punctuation	[
-40	11	661		Literal	0
+40	11	661	IntegerLiteral	Literal	0
 40	12	662		Punctuation	]
 40	13	663		Punctuation	=
 40	14	664	DeclRefExpr	Identifier	ch
@@ -208,7 +208,7 @@
 40	17	667	DeclRefExpr	Identifier	o
 40	18	668		Punctuation	]
 40	19	669		Punctuation	[
-40	20	670		Literal	0
+40	20	670	IntegerLiteral	Literal	0
 40	21	671		Punctuation	]
 40	22	672		Punctuation	;
 40	23	673	DeclRefExpr	Identifier	ch
@@ -216,7 +216,7 @@
 40	26	676	DeclRefExpr	Identifier	tot
 40	29	679		Punctuation	]
 40	30	680		Punctuation	[
-40	31	681		Literal	1
+40	31	681	IntegerLiteral	Literal	1
 40	32	682		Punctuation	]
 40	33	683		Punctuation	=
 40	34	684	DeclRefExpr	Identifier	ch
@@ -224,7 +224,7 @@
 40	37	687	DeclRefExpr	Identifier	o
 40	38	688		Punctuation	]
 40	39	689		Punctuation	[
-40	40	690		Literal	1
+40	40	690	IntegerLiteral	Literal	1
 40	41	691		Punctuation	]
 40	42	692		Punctuation	;
 41	3	696		Keyword	return
@@ -254,7 +254,7 @@
 45	22	759	DeclRefExpr	Identifier	o
 45	23	760		Punctuation	]
 45	24	761		Punctuation	[
-45	25	762		Literal	0
+45	25	762	IntegerLiteral	Literal	0
 45	26	763		Punctuation	]
 45	27	764		Punctuation	]
 45	28	765		Punctuation	+
@@ -270,7 +270,7 @@
 45	46	783	DeclRefExpr	Identifier	o
 45	47	784		Punctuation	]
 45	48	785		Punctuation	[
-45	49	786		Literal	1
+45	49	786	IntegerLiteral	Literal	1
 45	50	787		Punctuation	]
 45	51	788		Punctuation	]
 45	52	789		Punctuation	)
@@ -290,7 +290,7 @@
 46	22	818	DeclRefExpr	Identifier	o
 46	23	819		Punctuation	]
 46	24	820		Punctuation	[
-46	25	821		Literal	0
+46	25	821	IntegerLiteral	Literal	0
 46	26	822		Punctuation	]
 46	27	823		Punctuation	]
 46	28	824		Punctuation	+
@@ -306,7 +306,7 @@
 46	46	842	DeclRefExpr	Identifier	o
 46	47	843		Punctuation	]
 46	48	844		Punctuation	[
-46	49	845		Literal	1
+46	49	845	IntegerLiteral	Literal	1
 46	50	846		Punctuation	]
 46	51	847		Punctuation	]
 46	52	848		Punctuation	)
@@ -375,7 +375,7 @@
 56	14	996	DeclRefExpr	Identifier	r
 56	15	997		Punctuation	)
 56	16	998		Punctuation	>>
-56	18	1000		Literal	1
+56	18	1000	IntegerLiteral	Literal	1
 56	19	1001		Punctuation	)
 56	20	1002		Punctuation	;
 57	4	1007		Keyword	if
@@ -389,7 +389,7 @@
 57	17	1020	DeclRefExpr	Identifier	o
 57	18	1021		Punctuation	]
 57	19	1022		Punctuation	[
-57	20	1023		Literal	0
+57	20	1023	IntegerLiteral	Literal	0
 57	21	1024		Punctuation	]
 57	22	1025		Punctuation	=
 57	23	1026	DeclRefExpr	Identifier	update
@@ -403,7 +403,7 @@
 57	37	1040	DeclRefExpr	Identifier	o
 57	38	1041		Punctuation	]
 57	39	1042		Punctuation	[
-57	40	1043		Literal	0
+57	40	1043	IntegerLiteral	Literal	0
 57	41	1044		Punctuation	]
 57	42	1045		Punctuation	,
 57	43	1046	DeclRefExpr	Identifier	p
@@ -417,14 +417,14 @@
 58	12	1063	DeclRefExpr	Identifier	o
 58	13	1064		Punctuation	]
 58	14	1065		Punctuation	[
-58	15	1066		Literal	1
+58	15	1066	IntegerLiteral	Literal	1
 58	16	1067		Punctuation	]
 58	17	1068		Punctuation	=
 58	18	1069	DeclRefExpr	Identifier	update
 58	24	1075		Punctuation	(
 58	25	1076	DeclRefExpr	Identifier	m
 58	26	1077		Punctuation	+
-58	27	1078		Literal	1
+58	27	1078	IntegerLiteral	Literal	1
 58	28	1079		Punctuation	,
 58	29	1080	DeclRefExpr	Identifier	r
 58	30	1081		Punctuation	,
@@ -433,7 +433,7 @@
 58	34	1085	DeclRefExpr	Identifier	o
 58	35	1086		Punctuation	]
 58	36	1087		Punctuation	[
-58	37	1088		Literal	1
+58	37	1088	IntegerLiteral	Literal	1
 58	38	1089		Punctuation	]
 58	39	1090		Punctuation	,
 58	40	1091	DeclRefExpr	Identifier	p
@@ -447,7 +447,7 @@
 59	12	1108		Punctuation	-
 59	13	1109	DeclRefExpr	Identifier	l
 59	14	1110		Punctuation	+
-59	15	1111		Literal	1
+59	15	1111	IntegerLiteral	Literal	1
 59	16	1112		Punctuation	,
 59	17	1113	DeclRefExpr	Identifier	o
 59	18	1114		Punctuation	)
@@ -496,7 +496,7 @@
 65	44	1218		Punctuation	]
 65	45	1219		Punctuation	)
 65	47	1221		Keyword	return
-65	54	1228		Literal	0
+65	54	1228	IntegerLiteral	Literal	0
 65	55	1229		Punctuation	;
 66	3	1233		Keyword	if
 66	6	1236		Punctuation	(
@@ -527,7 +527,7 @@
 68	14	1291	DeclRefExpr	Identifier	r
 68	15	1292		Punctuation	)
 68	16	1293		Punctuation	>>
-68	18	1295		Literal	1
+68	18	1295	IntegerLiteral	Literal	1
 68	19	1296		Punctuation	)
 68	20	1297		Punctuation	;
 69	4	1302		Keyword	if
@@ -539,7 +539,7 @@
 69	17	1315	DeclRefExpr	Identifier	x
 69	18	1316		Punctuation	]
 69	19	1317		Punctuation	[
-69	20	1318		Literal	0
+69	20	1318	IntegerLiteral	Literal	0
 69	21	1319		Punctuation	]
 69	22	1320		Punctuation	]
 69	23	1321		Punctuation	==
@@ -550,7 +550,7 @@
 69	34	1332	DeclRefExpr	Identifier	y
 69	35	1333		Punctuation	]
 69	36	1334		Punctuation	[
-69	37	1335		Literal	0
+69	37	1335	IntegerLiteral	Literal	0
 69	38	1336		Punctuation	]
 69	39	1337		Punctuation	]
 69	40	1338		Punctuation	&&
@@ -561,7 +561,7 @@
 69	51	1349	DeclRefExpr	Identifier	x
 69	52	1350		Punctuation	]
 69	53	1351		Punctuation	[
-69	54	1352		Literal	0
+69	54	1352	IntegerLiteral	Literal	0
 69	55	1353		Punctuation	]
 69	56	1354		Punctuation	]
 69	57	1355		Punctuation	==
@@ -572,7 +572,7 @@
 69	68	1366	DeclRefExpr	Identifier	y
 69	69	1367		Punctuation	]
 69	70	1368		Punctuation	[
-69	71	1369		Literal	0
+69	71	1369	IntegerLiteral	Literal	0
 69	72	1370		Punctuation	]
 69	73	1371		Punctuation	]
 69	74	1372		Punctuation	)
@@ -581,7 +581,7 @@
 70	18	1391		Punctuation	(
 70	19	1392	DeclRefExpr	Identifier	m
 70	20	1393		Punctuation	+
-70	21	1394		Literal	1
+70	21	1394	IntegerLiteral	Literal	1
 70	22	1395		Punctuation	,
 70	23	1396	DeclRefExpr	Identifier	r
 70	24	1397		Punctuation	,
@@ -590,7 +590,7 @@
 70	28	1401	DeclRefExpr	Identifier	x
 70	29	1402		Punctuation	]
 70	30	1403		Punctuation	[
-70	31	1404		Literal	1
+70	31	1404	IntegerLiteral	Literal	1
 70	32	1405		Punctuation	]
 70	33	1406		Punctuation	,
 70	34	1407	DeclRefExpr	Identifier	ch
@@ -598,7 +598,7 @@
 70	37	1410	DeclRefExpr	Identifier	y
 70	38	1411		Punctuation	]
 70	39	1412		Punctuation	[
-70	40	1413		Literal	1
+70	40	1413	IntegerLiteral	Literal	1
 70	41	1414		Punctuation	]
 70	42	1415		Punctuation	)
 70	43	1416		Punctuation	;
@@ -615,7 +615,7 @@
 71	29	1446	DeclRefExpr	Identifier	x
 71	30	1447		Punctuation	]
 71	31	1448		Punctuation	[
-71	32	1449		Literal	0
+71	32	1449	IntegerLiteral	Literal	0
 71	33	1450		Punctuation	]
 71	34	1451		Punctuation	,
 71	35	1452	DeclRefExpr	Identifier	ch
@@ -623,7 +623,7 @@
 71	38	1455	DeclRefExpr	Identifier	y
 71	39	1456		Punctuation	]
 71	40	1457		Punctuation	[
-71	41	1458		Literal	0
+71	41	1458	IntegerLiteral	Literal	0
 71	42	1459		Punctuation	]
 71	43	1460		Punctuation	)
 71	44	1461		Punctuation	;
@@ -678,7 +678,7 @@
 81	17	1574		Punctuation	<
 81	19	1576		Punctuation	(
 81	20	1577		Keyword	const
-81	26	1583	StructDecl	Identifier	Data
+81	26	1583	TypeRef	Identifier	Data
 81	31	1588		Punctuation	&
 81	33	1590	ParmDecl	Identifier	b
 81	34	1591		Punctuation	)
@@ -708,10 +708,10 @@
 83	16	1645		Punctuation	;
 84	3	1649		Punctuation	}
 85	1	1651		Punctuation	}
-87	1	1655		Identifier	Data
+87	1	1655	TypeRef	Identifier	Data
 87	6	1660	FunctionDecl	Identifier	trans
 87	11	1665		Punctuation	(
-87	12	1666		Identifier	Data
+87	12	1666	TypeRef	Identifier	Data
 87	17	1671	ParmDecl	Identifier	x
 87	18	1672		Punctuation	,
 87	19	1673		Keyword	int
@@ -724,12 +724,12 @@
 88	3	1690		Keyword	int
 88	7	1694	VarDecl	Identifier	cur
 88	10	1697		Punctuation	[
-88	11	1698		Literal	10
+88	11	1698	IntegerLiteral	Literal	10
 88	13	1700		Punctuation	]
 88	14	1701		Punctuation	,
 88	15	1702	VarDecl	Identifier	cnt
 88	18	1705		Punctuation	=
-88	19	1706		Literal	0
+88	19	1706	IntegerLiteral	Literal	0
 88	20	1707		Punctuation	;
 89	3	1711	DeclRefExpr	Identifier	x
 89	4	1712		Punctuation	.
@@ -750,11 +750,11 @@
 91	14	1745		Punctuation	=
 91	15	1746	DeclRefExpr	Identifier	v
 91	16	1747		Punctuation	%
-91	17	1748		Literal	10
+91	17	1748	IntegerLiteral	Literal	10
 91	19	1750		Punctuation	;
 92	4	1755	DeclRefExpr	Identifier	v
 92	5	1756		Punctuation	/=
-92	7	1758		Literal	10
+92	7	1758	IntegerLiteral	Literal	10
 92	9	1760		Punctuation	;
 93	3	1764		Punctuation	}
 94	3	1768		Keyword	for
@@ -762,7 +762,7 @@
 94	7	1772		Keyword	int
 94	11	1776	VarDecl	Identifier	i
 94	12	1777		Punctuation	=
-94	13	1778		Literal	1
+94	13	1778	IntegerLiteral	Literal	1
 94	14	1779		Punctuation	;
 94	15	1780	DeclRefExpr	Identifier	i
 94	16	1781		Punctuation	<=
@@ -779,9 +779,9 @@
 94	35	1800		Punctuation	::
 94	37	1802	DeclRefExpr	Identifier	update
 94	43	1808		Punctuation	(
-94	44	1809		Literal	1
+94	44	1809	IntegerLiteral	Literal	1
 94	45	1810		Punctuation	,
-94	46	1811		Literal	6e5
+94	46	1811	FloatingLiteral	Literal	6e5
 94	49	1814		Punctuation	,
 94	50	1815	DeclRefExpr	Identifier	x
 94	51	1816		Punctuation	.
@@ -798,7 +798,7 @@
 94	68	1833		Punctuation	-
 94	69	1834	DeclRefExpr	Identifier	i
 94	70	1835		Punctuation	+
-94	71	1836		Literal	1
+94	71	1836	IntegerLiteral	Literal	1
 94	72	1837		Punctuation	]
 94	73	1838		Punctuation	)
 94	74	1839		Punctuation	;
@@ -809,10 +809,10 @@
 98	1	1856		Keyword	bool
 98	6	1861	FunctionDecl	Identifier	cmp
 98	9	1864		Punctuation	(
-98	10	1865		Identifier	Data
+98	10	1865	TypeRef	Identifier	Data
 98	15	1870	ParmDecl	Identifier	x
 98	16	1871		Punctuation	,
-98	17	1872		Identifier	Data
+98	17	1872	TypeRef	Identifier	Data
 98	22	1877	ParmDecl	Identifier	y
 98	23	1878		Punctuation	)
 98	25	1880		Punctuation	{
@@ -840,9 +840,9 @@
 100	13	1926		Punctuation	::
 100	15	1928	DeclRefExpr	Identifier	query
 100	20	1933		Punctuation	(
-100	21	1934		Literal	1
+100	21	1934	IntegerLiteral	Literal	1
 100	22	1935		Punctuation	,
-100	23	1936		Literal	6e5
+100	23	1936	FloatingLiteral	Literal	6e5
 100	26	1939		Punctuation	,
 100	27	1940	DeclRefExpr	Identifier	x
 100	28	1941		Punctuation	.
@@ -854,38 +854,38 @@
 100	36	1949		Punctuation	)
 100	37	1950		Punctuation	;
 101	1	1952		Punctuation	}
-103	1	1955		Identifier	Data
-103	6	1960	VarDecl	Identifier	dis
+103	1	1955	TypeRef	Identifier	Data
+103	6	1960	CallExpr	Identifier	dis
 103	9	1963		Punctuation	[
-103	10	1964		Literal	100005
+103	10	1964	IntegerLiteral	Literal	100005
 103	16	1970		Punctuation	]
 104	1	1973	TemplateRef	Identifier	priority_queue
 104	16	1988		Punctuation	<
-104	17	1989		Identifier	Data
+104	17	1989	TypeRef	Identifier	Data
 104	21	1993		Punctuation	>
-104	23	1995	VarDecl	Identifier	q
+104	23	1995	CallExpr	Identifier	q
 106	1	1999	TemplateRef	Identifier	vector
 106	8	2006		Punctuation	<
 106	9	2007	TypeRef	Identifier	pr
 106	11	2009		Punctuation	>
-106	13	2011	VarDecl	Identifier	e
+106	13	2011	CallExpr	Identifier	e
 106	14	2012		Punctuation	[
-106	15	2013		Literal	100005
+106	15	2013	IntegerLiteral	Literal	100005
 106	21	2019		Punctuation	]
 107	1	2022		Keyword	int
 107	5	2026	VarDecl	Identifier	len
 107	8	2029		Punctuation	[
-107	9	2030		Literal	100005
+107	9	2030	IntegerLiteral	Literal	100005
 107	15	2036		Punctuation	]
 107	16	2037		Punctuation	,
 107	17	2038	VarDecl	Identifier	p
 107	18	2039		Punctuation	[
-107	19	2040		Literal	100005
+107	19	2040	IntegerLiteral	Literal	100005
 107	25	2046		Punctuation	]
 107	26	2047		Punctuation	,
 107	27	2048	VarDecl	Identifier	pl
 107	29	2050		Punctuation	[
-107	30	2051		Literal	100005
+107	30	2051	IntegerLiteral	Literal	100005
 107	36	2057		Punctuation	]
 109	1	2061		Keyword	void
 109	6	2066	FunctionDecl	Identifier	dijkstra
@@ -902,7 +902,7 @@
 110	7	2096		Keyword	int
 110	11	2100	VarDecl	Identifier	i
 110	12	2101		Punctuation	=
-110	13	2102		Literal	1
+110	13	2102	IntegerLiteral	Literal	1
 110	14	2103		Punctuation	;
 110	15	2104	DeclRefExpr	Identifier	i
 110	16	2105		Punctuation	<=
@@ -920,17 +920,17 @@
 110	35	2124		Punctuation	[
 110	36	2125	DeclRefExpr	Identifier	i
 110	37	2126		Punctuation	/
-110	38	2127		Literal	10
+110	38	2127	IntegerLiteral	Literal	10
 110	40	2129		Punctuation	]
 110	41	2130		Punctuation	+
-110	42	2131		Literal	1
+110	42	2131	IntegerLiteral	Literal	1
 110	43	2132		Punctuation	;
 111	3	2136		Keyword	for
 111	6	2139		Punctuation	(
 111	7	2140		Keyword	int
 111	11	2144	VarDecl	Identifier	i
 111	12	2145		Punctuation	=
-111	13	2146		Literal	2
+111	13	2146	IntegerLiteral	Literal	2
 111	14	2147		Punctuation	;
 111	15	2148	DeclRefExpr	Identifier	i
 111	16	2149		Punctuation	<=
@@ -943,28 +943,28 @@
 111	28	2161		Punctuation	[
 111	29	2162	DeclRefExpr	Identifier	i
 111	30	2163		Punctuation	]
-111	31	2164		Punctuation	=
-111	32	2165	CallExpr	Identifier	Data
+111	31	2164	DeclRefExpr	Punctuation	=
+111	32	2165	TypeRef	Identifier	Data
 111	36	2169		Punctuation	(
 111	37	2170	DeclRefExpr	Identifier	i
 111	38	2171		Punctuation	,
-111	39	2172		Literal	1e9
+111	39	2172	FloatingLiteral	Literal	1e9
 111	42	2175		Punctuation	,
-111	43	2176		Literal	0
+111	43	2176	IntegerLiteral	Literal	0
 111	44	2177		Punctuation	)
 111	45	2178		Punctuation	;
 112	3	2182	DeclRefExpr	Identifier	dis
 112	6	2185		Punctuation	[
-112	7	2186		Literal	1
+112	7	2186	IntegerLiteral	Literal	1
 112	8	2187		Punctuation	]
-112	9	2188		Punctuation	=
-112	10	2189	CallExpr	Identifier	Data
+112	9	2188	DeclRefExpr	Punctuation	=
+112	10	2189	TypeRef	Identifier	Data
 112	14	2193		Punctuation	(
-112	15	2194		Literal	1
+112	15	2194	IntegerLiteral	Literal	1
 112	16	2195		Punctuation	,
-112	17	2196		Literal	0
+112	17	2196	IntegerLiteral	Literal	0
 112	18	2197		Punctuation	,
-112	19	2198		Literal	0
+112	19	2198	IntegerLiteral	Literal	0
 112	20	2199		Punctuation	)
 112	21	2200		Punctuation	;
 113	3	2204	DeclRefExpr	Identifier	q
@@ -973,7 +973,7 @@
 113	9	2210		Punctuation	(
 113	10	2211	DeclRefExpr	Identifier	dis
 113	13	2214		Punctuation	[
-113	14	2215		Literal	1
+113	14	2215	IntegerLiteral	Literal	1
 113	15	2216		Punctuation	]
 113	16	2217		Punctuation	)
 113	17	2218		Punctuation	;
@@ -987,7 +987,7 @@
 114	19	2238		Punctuation	)
 114	20	2239		Punctuation	)
 114	22	2241		Punctuation	{
-115	4	2246		Identifier	Data
+115	4	2246	TypeRef	Identifier	Data
 115	9	2251	VarDecl	Identifier	t
 115	10	2252		Punctuation	=
 115	11	2253	DeclRefExpr	Identifier	q
@@ -1016,7 +1016,7 @@
 116	21	2290	DeclRefExpr	Identifier	t
 116	22	2291		Punctuation	)
 116	23	2292		Punctuation	)
-116	25	2294		Keyword	continue
+116	25	2294	ContinueStmt	Keyword	continue
 116	33	2302		Punctuation	;
 117	4	2307		Keyword	int
 117	8	2311		Identifier	x
@@ -1036,7 +1036,7 @@
 118	8	2331		Keyword	int
 118	12	2335	VarDecl	Identifier	i
 118	13	2336		Punctuation	=
-118	14	2337		Literal	0
+118	14	2337	IntegerLiteral	Literal	0
 118	15	2338		Punctuation	;
 118	16	2339	DeclRefExpr	Identifier	i
 118	17	2340		Punctuation	<
@@ -1099,7 +1099,7 @@
 121	9	2432		Punctuation	[
 121	10	2433	DeclRefExpr	Identifier	u
 121	11	2434		Punctuation	]
-121	12	2435		Punctuation	=
+121	12	2435	DeclRefExpr	Punctuation	=
 121	13	2436	DeclRefExpr	Identifier	trans
 121	18	2441		Punctuation	(
 121	19	2442	DeclRefExpr	Identifier	dis
@@ -1155,7 +1155,7 @@
 125	29	2531	MemberRefExpr	Identifier	d
 125	30	2532		Punctuation	)
 125	32	2534		Punctuation	{
-126	4	2539		Identifier	Data
+126	4	2539	TypeRef	Identifier	Data
 126	9	2544	VarDecl	Identifier	t
 126	10	2545		Punctuation	=
 126	11	2546	DeclRefExpr	Identifier	trans
@@ -1187,7 +1187,7 @@
 128	8	2596		Punctuation	[
 128	9	2597	DeclRefExpr	Identifier	u
 128	10	2598		Punctuation	]
-128	11	2599		Punctuation	=
+128	11	2599	DeclRefExpr	Punctuation	=
 128	12	2600	DeclRefExpr	Identifier	t
 128	13	2601		Punctuation	;
 129	5	2607	DeclRefExpr	Identifier	p
@@ -1222,12 +1222,12 @@
 137	1	2664		Keyword	int
 137	5	2668	VarDecl	Identifier	ans
 137	8	2671		Punctuation	[
-137	9	2672		Literal	100005
+137	9	2672	IntegerLiteral	Literal	100005
 137	15	2678		Punctuation	]
 138	1	2681		Keyword	bool
 138	6	2686	VarDecl	Identifier	vis
 138	9	2689		Punctuation	[
-138	10	2690		Literal	100005
+138	10	2690	IntegerLiteral	Literal	100005
 138	16	2696		Punctuation	]
 140	1	2700		Keyword	int
 140	5	2704		Identifier	solve
@@ -1254,7 +1254,7 @@
 142	7	2754	DeclRefExpr	Identifier	x
 142	8	2755		Punctuation	]
 142	9	2756		Punctuation	=
-142	10	2757		Literal	1
+142	10	2757	IntegerLiteral	Literal	1
 142	11	2758		Punctuation	;
 143	3	2762		Keyword	return
 143	10	2769	DeclRefExpr	Identifier	ans
@@ -1321,7 +1321,7 @@
 150	7	2884		Keyword	int
 150	11	2888	VarDecl	Identifier	i
 150	12	2889		Punctuation	=
-150	13	2890		Literal	1
+150	13	2890	IntegerLiteral	Literal	1
 150	14	2891		Punctuation	;
 150	15	2892	DeclRefExpr	Identifier	i
 150	16	2893		Punctuation	<=
@@ -1387,17 +1387,17 @@
 156	16	3015		Punctuation	;
 157	3	3019	DeclRefExpr	Identifier	vis
 157	6	3022		Punctuation	[
-157	7	3023		Literal	1
+157	7	3023	IntegerLiteral	Literal	1
 157	8	3024		Punctuation	]
 157	9	3025		Punctuation	=
-157	10	3026		Literal	1
+157	10	3026	IntegerLiteral	Literal	1
 157	11	3027		Punctuation	;
 158	3	3031		Keyword	for
 158	6	3034		Punctuation	(
 158	7	3035		Keyword	int
 158	11	3039	VarDecl	Identifier	i
 158	12	3040		Punctuation	=
-158	13	3041		Literal	2
+158	13	3041	IntegerLiteral	Literal	2
 158	14	3042		Punctuation	;
 158	15	3043	DeclRefExpr	Identifier	i
 158	16	3044		Punctuation	<=
@@ -1417,6 +1417,6 @@
 158	47	3075		Punctuation	)
 158	48	3076		Punctuation	;
 159	3	3080		Keyword	return
-159	10	3087		Literal	0
+159	10	3087	IntegerLiteral	Literal	0
 159	11	3088		Punctuation	;
 160	1	3090		Punctuation	}
